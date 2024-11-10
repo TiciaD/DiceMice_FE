@@ -1,0 +1,7 @@
+services:
+  angular-app:
+    build:
+      context: ./Dice-Mice
+      dockerfile: ${DOCKERFILE:-/workspace/DiceMice_FE/Dockerfile.development}  # Default to development
+    ports:
+      - "4200:4200"  # Use 80:80 if running the production Nginx server

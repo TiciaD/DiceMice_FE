@@ -1,0 +1,13 @@
+# Development Dockerfile for Angular
+FROM node:18 AS development
+
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+
+# Expose the Angular development server port
+EXPOSE 4200
+
+# Start Angular in development mode
+CMD ["npm", "start"]
