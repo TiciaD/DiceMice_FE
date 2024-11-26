@@ -1,0 +1,17 @@
+<mat-toolbar>
+  <button mat-icon-button class="example-icon" aria-label="Menu" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Counties</button>
+    <button mat-menu-item routerLink="/mice">Mice</button>
+  </mat-menu>
+  <span>Dice Mice</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="redirectToDiscordLogin()">
+    <mat-icon svgIcon="discord_logo"></mat-icon>
+  </button>
+</mat-toolbar>
+<main class="main-content">
+  <ng-content></ng-content> 
+</main>

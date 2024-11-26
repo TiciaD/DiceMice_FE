@@ -1,0 +1,5 @@
+tasks:
+    - name: Angular Dependencies
+      init: |
+          npm install -g @angular/cli
+          npm install
