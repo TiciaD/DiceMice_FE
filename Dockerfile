@@ -3,9 +3,9 @@
 FROM node:18 AS build
 
 WORKDIR /app
-COPY package*.json ./
+COPY Dice-Mice/package*.json ./
 RUN npm install
-COPY . .
+COPY Dice-Mice ./
 RUN npm run build --prod
 
 # Stage 2: Serve the Angular app using Nginx
