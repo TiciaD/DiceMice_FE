@@ -10,7 +10,7 @@ RUN npm run build --prod
 
 # Stage 2: Serve the Angular app using Nginx
 FROM nginx:latest
-COPY --from=build /app/dist/Dice-Mice /usr/share/nginx/html
+COPY --from=build /app/dist/dice-mice /usr/share/nginx/html
 
 # Expose Nginx port
 EXPOSE 80
