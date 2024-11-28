@@ -14,6 +14,6 @@ import { RouterLink } from '@angular/router';
 })
 export class LayoutComponent {
   redirectToDiscordLogin() {
-    window.location.href = 'https://dicemice-backend.onrender.com/auth/redirect';
+    window.location.href = 'https://dicemice-backend.onrender.com/auth/login';
   }
 }

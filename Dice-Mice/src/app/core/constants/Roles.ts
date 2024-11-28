@@ -1,0 +1,1 @@
+export type ROLES_CONSTANTS = "BASIC" | "ADMIN"
